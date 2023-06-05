@@ -29,7 +29,7 @@ class LitModel(pl.LightningModule):
         self.input_data_cbm = "cq" # caption + question
         self.input_data_mmbert = "fq" # features + question
 
-        # MOVE: Load task labels
+        # Load task labels
         self.task_name = args.dataset
         data = self.task_name.split("_")
         self.dataset = data[0]

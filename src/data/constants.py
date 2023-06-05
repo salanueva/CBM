@@ -2,7 +2,7 @@
 
 DATA_ROOT = "./data"
 
-FEAT_FOLDER = "/gscratch3/users/asalaberria009/features/visualbert"
+FEAT_FOLDER = "features"
 CAP_FOLDER = {
     "human": {
         "train": "captions/train/formatted_captions_train2014.json",

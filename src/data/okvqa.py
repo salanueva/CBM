@@ -42,10 +42,10 @@ class OkVqa(torchvision.datasets.vision.VisionDataset):
             captions = {k: (random.choice(v) if isinstance(v, list) else v) for k, v in captions.items()}
         
         features = None
-        if feat_path is not None and os.path.isdir(Path(feat_path)):
+        if feat_path is not None and os.path.isdir(Path(os.path.join(self.root, feat_path))):
             features = feat_path
         elif feat_path is not None:
-            with open(feat_path, "rb") as f:
+            with open(os.path.join(self.root, feat_path), "rb") as f:
                 features = pickle.load(f)
 
         if is_tiny:

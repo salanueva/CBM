@@ -31,7 +31,7 @@ class LitModel(pl.LightningModule):
         if "mmbert" in args.model:
             self.input_data += "f" # features (of image)
 
-        # MOVE: Load task labels
+        # Load task labels
         self.task_name = args.dataset
         data = self.task_name.split("_")
         self.dataset = data[0]
