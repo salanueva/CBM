@@ -86,7 +86,7 @@ python3 src/t5_train.py --model "t5-base" --do_train --do_predict \
 ```
 
 
-# Citation
+## Citation
 
 If you use this repository in your work, please cite:
 
